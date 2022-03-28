@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularz HTML</title>
+  </head>
+  <body>
+    <form action="https://formspree.io/f/xjvlewrz" method="POST">
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="name">Imię</label></td>
+            <td><input type="text" id="name" name="firstName" /></td>
+          </tr>
+          <tr>
+            <td><label for="surname">Nazwisko</label></td>
+            <td><input type="text" id="surname" name="lastName" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">e-mail</label></td>
+            <td><input type="email" id="email" name="emailAddress" /></td>
+          </tr>
+          <tr>
+            <td><label for="phone">Telefon</label></td>
+            <td><input type="tel" id="phone" name="phoneNum" /></td>
+          </tr>
+          <tr>
+            <td><label>Wybór miasta</label></td>
+            <td>
+              <select name="city">
+                <option value="Krakov">Kraków</option>
+                <option value="Warsaw">Warszawa</option>
+                <option value="Gdansk" selected>Gdańsk</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Płeć</label></td>
+            <td>
+              <label
+                >Mężczyzna<input type="radio" name="sex" value="man"
+              /></label>
+              <label
+                >Kobieta<input type="radio" name="sex" value="woman"
+              /></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="permission">Zgoda na dane osobowe</label>
+            </td>
+            <td><input type="checkbox" id="permission" name="permission" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <textarea
+                name="msg"
+                id="msg"
+                maxlength="100"
+                placeholder="Wiadomość.."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Wyślij" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
