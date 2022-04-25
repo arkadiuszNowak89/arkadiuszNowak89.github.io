@@ -1,0 +1,12 @@
+.accordion-button::after {
+  content: none;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+button:focus {
+  text-decoration: underline;
+  box-shadow: none !important;
+}
